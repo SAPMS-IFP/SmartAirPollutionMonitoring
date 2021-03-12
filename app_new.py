@@ -22,7 +22,7 @@ file.close()
 # In[23]:
 
 
-@app.route('/', methods=["GET", "POST"])
+@app.route('/')
 def hello_world():
     return render_template('show.html', pred=result[0],acc = result[1],rmse = result[2])
 
